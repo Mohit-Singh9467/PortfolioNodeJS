@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+</head>
+<body>
+    <h1>Admin Page</h1>
+    <h2>Add Student</h2>
+    <form action="/api/students" method="POST">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="text" name="major" placeholder="Major" required>
+        <button type="submit">Add Student</button>
+    </form>
+
+    <h2>Add Project</h2>
+    <form action="/api/projects" method="POST">
+        <input type="text" name="title" placeholder="Project Title" required>
+        <input type="text" name="description" placeholder="Description" required>
+        <input type="text" name="studentId" placeholder="Student ID" required>
+        <button type="submit">Add Project</button>
+    </form>
+</body>
+</html>
